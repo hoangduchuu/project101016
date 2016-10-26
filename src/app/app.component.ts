@@ -18,7 +18,7 @@ export class AppComponent{
       private eventEmitterService: EventEmitterService,
       private af: AngularFire,
     ) {}
-
+// comment
     termObject: Term = { term: '', category: null};
     searchNote() {
       console.log('searchNote activated with term is: |' + this.termObject.term)
