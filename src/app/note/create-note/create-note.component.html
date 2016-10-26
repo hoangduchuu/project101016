@@ -1,0 +1,42 @@
+
+<form id ="create-note" #form="ngForm" (ngSubmit)="onSubmit(form.value)" *ngIf="active">
+  <!-- {{diagnostic}}-->
+
+    <!-- {{form.valid}}  -->
+
+    <div class="form-group">
+      <span>Lựa chọn kiểu lời nhắn: </span><select class="form-control form-noteType" name="noteType"  #noteType="ngModel" [(ngModel)]="newNote.noteType">
+        <option *ngFor="let type of noteTypes" [value]="type.value">{{type.display}}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+     <input type="text" placeholder="Tiêu đề lời nhắn" class="form-control form-id" name="id" #id="ngModel" [(ngModel)]="newNote.id" required>
+    </div>
+
+
+    <div class="form-group">
+      <textarea  placeholder="Bạn muốn nhắn gửi gì nào ?" class="form-control form-content" name="content" #content="ngModel" [(ngModel)]="newNote.content" required> </textarea>
+    </div>
+
+   <div class="address">
+     <div class="form-group">
+         <span>Từ:  </span><input type="text" placeholder="Bạn muốn đề tên người gửi không ?" class="form-control form-from" name="from" #from="ngModel" [(ngModel)]="newNote.from" >
+         <span>Tới:</span> <input type="text" placeholder="Bạn muốn gửi tới ai ?." class="form-control form-to" name="to" #to="ngModel" [(ngModel)]="newNote.to" >
+      </div>
+      <div class="form-group">
+      </div>
+
+   </div>
+
+   <div id="send-button">
+     <!-- <button type="submit" [class.disabled]="form.valid == false"> -->
+     <button type="submit">
+       Xong
+     </button>
+   </div>
+</form>
+
+<div  *ngIf="!active">
+  <h4>Cảm ơn bạn. Lời Nhắn của bạn sẽ sớm được cập nhật trên hệ thống của chúng tôi</h4>
+</div>

@@ -1,0 +1,110 @@
+#create-note {
+text-align: left;
+margin-left: 30px;
+}
+
+#create-note div {
+  margin-top : 5px;
+}
+
+/*noteType */
+#create-note span {
+  margin-right: 5px;
+}
+
+#create-note span,select,option {
+font-size: 16px;
+}
+
+/*title*/
+
+#create-note input {
+  padding-top: 5px;
+  padding-left: 7px;
+  padding-bottom: 5px;
+  width: 90%;
+  margin: 10px auto;
+  font-size: 16px;
+}
+
+/*textarea of content*/
+
+#create-note textarea {
+  width: 90%;
+  height: 200px;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-left:10px;
+
+}
+
+/*address*/
+
+#create-note .address{
+  text-align: left;
+  /*display: inline-block;*/
+}
+
+#create-note .address .form-group {
+display: inline-block;
+}
+
+#create-note .address input{
+  width: 30%;
+  display: inline-block;
+}
+
+#create-note .address span {
+  margin-right: 15px;
+  margin-left: 15px;
+  /*display: inline-block;*/
+  /*float:left;*/
+}
+
+
+#create-note input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-left: 1px;
+
+}
+#create-note input::-moz-placeholder { /* Firefox 19+ */
+  font-size: 16px;
+
+}
+#create-note input:-ms-input-placeholder { /* IE 10+ */
+  font-size: 16px;
+
+}
+#create-note input:-moz-placeholder { /* Firefox 18- */
+  font-size: 16px;
+
+}
+
+#send-button {
+  text-align: center;
+  margin-right: 70px;
+  /*padding: 20px*/
+}
+
+#send-button button {
+    font-size: 18px;
+    padding: 5px 30px;
+    border: 0;
+    color: white;
+     background-color: #4CAF50;
+     border-radius: 2px;
+     transition: 0.3s ease all;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#send-button button:hover {
+  background-color: white; /* Green */
+  color: black;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

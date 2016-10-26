@@ -1,0 +1,51 @@
+
+{{diagnostic}}
+<form id="create-angel" #f="ngForm" (ngSubmit)="saveAndSend(f.value, f.valid)" *ngIf="angelActive">
+
+  <div class="form-control">
+    <input type="text" placeholder="Tên bạn là gì" id = "entry.525088192" name="name" [(ngModel)]="name">
+  </div>
+
+  <div class="form-control">
+    <input type="text"  placeholder="Địa chỉ Email của bạn"  id = "entry.496228367" name="email" [(ngModel)]="email">
+  </div>
+
+  <div class="form-control">
+    <input type="text"  placeholder="Số điện thoại của bạn"  id = "entry.264189850" name="phone" [(ngModel)]="phone">
+  </div>
+
+  <div class="form-control">
+    <input type="text"  placeholder="Địa Chỉ Facebook của bạn là gì"  id = "entry.862093949" name="facebook" [(ngModel)]="facebook">
+  </div>
+
+  <div class="form-control">
+    <!-- <input type="text"  placeholder="Bạn là học sinh hay sinh viên"  id = "entry.264189850" name="type" [(ngModel)]="type"> -->
+
+    <select  id = "entry.591547068" name="type" [(ngModel)]="type">
+      <option value="Sinh Viên">Sinh Viên</option>
+      <option value="Học Sinh">Học Sinh</option>
+      <option value="Đã ra trường">Đã ra trường</option>
+    </select>
+  </div>
+
+  <div class="form-control">
+    <input type="text"  placeholder="Nơi sống của bạn ở đâu " id = "entry.246536080" name="address" [(ngModel)]="address">
+  </div>
+
+  <div class="form-control">
+    <input type="text" placeholder="Bạn học trường nào" id = "entry.644002746" name="school" [(ngModel)]="school">
+  </div>
+
+  <div id="send-button">
+    <button type="submit" class="btn btn-success">Click To Send</button>
+  </div>
+
+</form>
+
+<div  *ngIf="!angelActive">
+  <h4>Cảm ơn bạn. Lời Nhắn của bạn sẽ sớm được cập nhật trên hệ thống của chúng tôi</h4>
+</div>
+
+
+
+<!-- <div id="my-signin2" (data-onsuccess)="onSignIn"></div> -->

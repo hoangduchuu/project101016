@@ -1,0 +1,115 @@
+.detail-note {
+  margin-top: 30px;
+  /*text-align:center;*/
+}
+
+.brick {
+  width:80%;
+  box-shadow: 2px 2px 4px 0 #ccc;
+  background: #fff;
+  /* vertical gutter */
+  margin-bottom: 32px;
+  transition: 0.3s ease all;
+  padding: 30px 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.brick .delete-button {
+  background-color: #f44336;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.item,.brick:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+.brick h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.brick .forever h3{
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    /*font: 1em/1.67 'Open Sans', Arial, Sans-serif;*/
+    color: #74AAF7;
+}
+
+.brick .love h3{
+  color: #FF85CB;
+}
+
+.brick .thank h3{
+    color: #FFD041;
+}
+
+.brick .sorry h3{
+  color: #A1D19A;
+}
+
+.brick p {
+  /*show hand*/
+  cursor: pointer;
+  text-align: justify;
+  /*limit line */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  /*max-height: 15.1em;*/
+  line-height: 1.8em;
+}
+
+.brick .address span {
+  font-style: italic;
+}
+
+.brick .status .left {
+  text-align: left;
+  display: inline-block;
+}
+
+.brick .status .left img {
+  width: 20px;
+  transform: translateY(5px);
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.brick .status .left .loved {
+  margin-right: 10px;
+  transform: scale(1.5);
+}
+
+.brick .status .right {
+  display: inline-block;
+  float:right;
+  transform: translateY(4px);
+}
+
+.brick .status .right {
+  display: inline-block;
+  float:right;
+  transform: translateY(4px);
+}
+
+.brick .status .right #social {
+  text-decoration: none;
+  color:#3b5998;
+  text-transform: capitalize;
+  font-weight: bold;
+  cursor: pointer;
+}

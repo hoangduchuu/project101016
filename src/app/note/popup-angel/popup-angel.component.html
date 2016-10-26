@@ -1,0 +1,15 @@
+<a  (click)="becomeAngel()" href="#popup2" class="popup-box-button">Trở Thành Thiên Thần</a>
+<div id="popup2" class="popup-overlay">
+
+    <div class="popup-window">
+      <h2 *ngIf="(af.auth | async)" > Tin nhắn thay lời trái tim </h2>
+      <h2  *ngIf="!(af.auth | async)" >Đăng nhập để gửi lời yêu thương</h2>
+
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+
+        <create-form-angel></create-form-angel>
+
+      </div>
+	  </div>
+  </div>

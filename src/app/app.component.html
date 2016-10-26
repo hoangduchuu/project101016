@@ -1,0 +1,60 @@
+<!-- header -->
+<header id="site-header">
+
+  <div class="topbar">
+    <!-- logo -->
+    <div class="logo">
+      <a id="logo-content" href="#" class ="masked"  (click)="filterCategory('refesh')" >
+        <!-- <img src="" alt="logo"> -->
+        NóiYêuThương
+      </a>
+    </div>
+
+    <!-- search bar -->
+    <div id="top-search-bar">
+      <input type="text" id="term" name="term" placeholder="Search" (keyup)="searchNote()" [(ngModel)]="termObject.term">
+    </div>
+
+
+    <!-- main navigation -->
+    <nav id="main-navigation">
+      <ul>
+        <li><a href=""><img src="../assets/img/hash.svg" alt=""></a></li>
+        <li><a href=""><img src="../assets/img/heart.svg" alt=""></a></li>
+        <!-- <li><a href="#">Đăng Nhập</a></li>
+        <li><a href="#">Đăng Ký</a></li> -->
+      </ul>
+    </nav>
+  </div>
+
+  <!-- filter section -->
+  <section class="filter">
+  <div class="filter-list-button">
+    <!-- <a><input type ="button" value="#5 ngày cho mãi mãi"></a>
+    <a><input type ="button" value="nói yêu thương"></a>
+    <a><input type ="button" value="nói cảm ơn"></a>
+    <a><input type ="button" value="nói xin lỗi"></a> -->
+
+    <a (click)="filterCategory('forever')" >#5 ngày cho mãi mãi</a>
+    <a (click)="filterCategory('love')" >nói yêu thương</a>
+    <a (click)="filterCategory('thank')" >nói cảm ơn</a>
+    <a (click)="filterCategory('sorry')" >nói xin lỗi</a>
+
+  </div>
+  </section>
+
+</header>
+
+
+  <router-outlet></router-outlet>
+
+
+  <!-- footer -->
+  <footer id="footer">
+    <!-- <img src="" alt="noiyeuthuong"> -->
+    <span>Nói Yêu Thương Website &trade; <br>Coppyright &copy; {{year}}</span>
+    <br>
+    <span>Created by <a href="https://xanhtool.github.io/">XanhTool Technologies &trade;</a> </span>
+    <button (click)="logout()"  *ngIf="af.auth | async">Logout</button>
+    <!-- <p><a routerLink="/about-us"  routerLinkActive="active">about us</a></p> -->
+  </footer>

@@ -1,0 +1,66 @@
+<!-- <button (click)="backHome()">Comeback</button> -->
+
+<!-- <meta property="og:url" content="www.google.com"  *ngIf="brick"  /> -->
+<meta property="og:url" content="www.google.com" />
+<meta property="og:title" content="google this is title" />
+<meta property="og:description" content="A site to make researches this is description" />
+<meta property="og:image" content="google.png" />
+<meta property="n2s:via" content="Google" />
+<meta property="n2s:hashtags" content="Google"/>
+
+  <!-- [properties]="{url:'www.hiepxanh.github.io', title:'my title',  description:'my description is hare', img:' an image', via:'Ced_VDB', hashtags:'someHashTag'}" -->
+<!-- <share-container
+
+                     direction="horizontal"
+                     addedText="Chia sẻ"
+                     [expandable]="false"
+                     [textEnabled]="true"
+                     [platforms]="['facebook']">
+ </share-container>
+  -->
+<div class="detail-note">
+  <div  class="brick" *ngIf="brick" >
+     <div [ngClass]="{
+       forever: brick.noteType == 'forever',
+       love: brick.noteType == 'love',
+       thank: brick.noteType == 'thank',
+       sorry: brick.noteType == 'sorry'
+     }"
+     >
+        <h3>{{brick.id}}</h3>
+        <button   class="delete-button" (click)="deleteNote(brick.$key)" *ngIf="brick.author == currentUser">Xóa</button>
+     </div>
+
+      <p>
+        {{brick.content}}
+      </p>
+      <div class="address">
+        <p>
+          Từ: <span>{{brick.from}}</span><br>
+          Tới: <span>{{brick.to}}</span>
+      </p>
+      </div>
+      <div class="status">
+        <div class="left" [ngSwitch]="value">
+          <a ><img [class.loved]="brick.isLoved" (click)= "changeLoveCount(brick)" style src="../assets/img/icon heart small.png" alt="Thích"></a>
+          <span>{{brick.loveCount}}</span>
+        </div>
+        <div class="right">
+          <button (click)="sendEmail()">Send Email</button>
+          <a id="social" href="#" (click)= "changeShareCount(brick)" >
+            <!-- Shares -->
+            <share-container
+
+                                 direction="horizontal"
+                                 addedText="Chia sẻ"
+                                 [expandable]="false"
+                                 [textEnabled]="true"
+                                 [platforms]="['facebook']">
+             </share-container>
+          </a>
+          <span>{{brick.shareCount}}</span>
+        </div>
+      </div>
+  </div>
+
+</div>

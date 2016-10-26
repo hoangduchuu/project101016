@@ -1,0 +1,27 @@
+.login-field {
+  text-align: center;
+}
+
+.login-field-google{
+  font-size: 18px;
+  display: block;
+  padding: 10px 20px;
+  width: 50%;
+  margin-top: 20px;
+  background-color: #428BCA;
+  color: white;
+  border: none;
+  margin: 20px auto 20px auto;
+}
+
+.login-field-facebook {
+  font-size: 18px;
+  display: block;
+  padding: 10px 20px;
+  width: 50%;
+  margin-top: 20px;
+  background-color: #C9302C ;
+  color: white;
+  border: none;
+  margin: 20px auto 20px auto;
+}

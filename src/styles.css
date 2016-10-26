@@ -1,0 +1,117 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*css reset stuff*/
+* {
+  box-sizing: border-box;
+}
+
+/*loading screen*/
+
+.loading {
+    font-family: "LeagueGothicRegular",Lucida, sans-serif;
+    font-size: 215px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: -6px;
+    margin-bottom: 10px;
+}
+
+.masked {
+	background: url(assets/img/paint.png) repeat, white;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-animation-name: masked-animation;
+	-webkit-animation-duration: 40s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes masked-animation {
+	0% {background-position: left bottom;}
+	100% {background-position: right bottom;}
+}
+
+
+/*regular setup*/
+
+body {
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    /*font: 1em/1.67 'Open Sans', Arial, Sans-serif;*/
+    font-family: 'MyriadPro-Regular', Arial, Sans-serif;
+    background-color: #e9e9e9;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+
+.loading {
+    padding-top: 150px;
+    /*margin:500px auto;*/
+    text-align: center;
+}
+
+
+@font-face {
+    font-family: iCielBambola;
+    src: url(assets/font/iCielBambola.otf);
+}
+
+@font-face {
+    font-family: AvenirNextLTPro-Regular;
+    src: url(assets/font/AvenirNextLTPro-Regular.otf);
+}
+
+
+@font-face {
+  font-family: MyriadPro-BoldCond;
+  src: url(assets/font/MyriadPro-BoldCond.otf);
+}
+
+@font-face {
+    font-family: MyriadPro-Cond;
+    src: url(assets/font/MyriadPro-Cond.otf);
+}
+
+@font-face {
+    font-family: MyriadPro-CondIt;
+    src: url(assets/font/MyriadPro-CondIt.otf);
+}
+
+@font-face {
+  font-family: MyriadPro-Regular;
+  src: url(assets/font/MyriadPro-Regular.otf);
+}
+
+/*responsive*/
+
+/*mobile stylings */
+@media screen and (max-width: 600px) {
+  .loading {
+      padding-top: 100px;
+      text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .loading {
+      padding-top: 350px;
+      text-align: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .loading {
+      padding-top: 450px;
+      text-align: center;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .loading {
+      padding-top: 710px;
+      text-align: center;
+  }
+}

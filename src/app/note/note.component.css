@@ -1,0 +1,215 @@
+
+/*Hero Section*/
+.hero {
+  background: #555;
+  background-image: url(assets/img/hero.jpg);
+  background-size: cover;
+  margin-top: 25px auto 0 auto;
+  background-position:0% 35%;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px 0 #222;
+  min-height: 520px;
+  width: 90%;
+  margin: 25px auto;
+}
+
+.hero-content {
+  color: #fff;
+  padding-top: 400px;
+  line-height: 1;
+  text-align: center;
+}
+
+.hero-content a {
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 3px;
+  padding: 15px 30px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 28px;
+  transition: 0.3s ease all;
+}
+
+.hero-content a:hover:nth-child(1) {
+  background-color: #569917;
+}
+
+.hero-content a:hover:nth-child(2) {
+  background-color: #E2574C;
+}
+
+/*main content*/
+
+.wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.masonry {
+    margin: 1.5em 0;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: 16px;
+}
+
+.item {
+    display: inline-block;
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    box-shadow: 2px 2px 4px 0 #ccc;
+    transition: 0.3s ease all;
+    /*this fix for mansory not stack with column-count*/
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid; /* Firefox is dumb */
+    break-inside: avoid;
+    -webkit-backface-visibility: hidden;
+}
+
+
+  /* this is the css that keeps the container centered in page */
+  /*.grid {
+    margin: 0 auto;
+}*/
+
+/* clearfix */
+/*.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}*/
+
+.grid-view {
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    /*font: 1em/1.67 'Open Sans', Arial, Sans-serif;*/
+    margin: 5px auto;
+}
+
+.grid-view:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+
+.brick {
+  width:320px;
+  box-shadow: 2px 2px 4px 0 #ccc;
+  background: #fff;
+  /* vertical gutter */
+  margin-bottom: 32px;
+  transition: 0.3s ease all;
+  padding: 20px;
+}
+
+.brick .delete-button {
+  background-color: #f44336;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.item,.brick:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+.brick h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.brick .forever h3{
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    /*font: 1em/1.67 'Open Sans', Arial, Sans-serif;*/
+    color: #74AAF7;
+}
+
+.brick .love h3{
+  color: #FF85CB;
+}
+
+.brick .thank h3{
+    color: #FFD041;
+}
+
+.brick .sorry h3{
+  color: #A1D19A;
+}
+
+.brick p {
+  /*show hand*/
+  cursor: pointer;
+  text-align: justify;
+  /*limit line */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 15.1em;
+  line-height: 1.8em;
+}
+
+.brick .address span {
+  font-style: italic;
+}
+
+.brick .status .left {
+  text-align: left;
+  display: inline-block;
+}
+
+.brick .status .left img {
+  width: 20px;
+  transform: translateY(5px);
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.brick .status .left .loved {
+  margin-right: 10px;
+  transform: scale(1.5);
+}
+
+.brick .status .right {
+  display: inline-block;
+  float:right;
+  transform: translateY(4px);
+}
+
+.brick .status .right {
+  display: inline-block;
+  float:right;
+  transform: translateY(4px);
+}
+
+.brick .status .right #social {
+  text-decoration: none;
+  color:#3b5998;
+  text-transform: capitalize;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*footer*/
+#footer {
+  background: #4D6684 ;
+  color: #fff;
+  padding: 15px 30px;
+  text-align: center;
+}
