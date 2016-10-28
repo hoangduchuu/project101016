@@ -24,7 +24,7 @@ export class SendEmailService {
       let bodyString = JSON.stringify(this.payload); // Stringify payload
       let headers      = new Headers({
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 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',
+        'Authorization': 'Bearer <API KEY> ',
         'Access-Control-Allow-Origin':'*'
      }); // ... Set content type to JSON
       let options       = new RequestOptions({ headers: headers }); // Create a request option
