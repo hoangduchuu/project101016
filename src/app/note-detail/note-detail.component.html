@@ -1,7 +1,7 @@
 <!-- <button (click)="backHome()">Comeback</button> -->
 
 <!-- <meta property="og:url" content="www.google.com"  *ngIf="brick"  /> -->
-<meta property="og:url" content="www.google.com" />
+<meta property="og:url" content="www.google.com/{{brick.$key}}" *ngIf="brick"/>
 <meta property="og:title" content="google this is title" />
 <meta property="og:description" content="A site to make researches this is description" />
 <meta property="og:image" content="google.png" />

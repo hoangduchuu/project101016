@@ -51,4 +51,31 @@ export class NoteDetailComponent implements OnInit {
                                 });
   }
 
+  activedKey: string = null;
+  changeLoveCount(brick) {
+   //  using template variable to store $key
+    this.activedKey = brick.$key
+   //  increase love count
+    brick.loveCount += 1
+   //  remove unnecessary key in object
+    delete brick.$key
+    delete brick.$exists
+    this.updateNote(this.activedKey,brick);
+  }
+
+  changeShareCount(brick) {
+    //  using template variable to store $key
+     this.activedKey = brick.$key
+    //  increase love count
+     brick.shareCount += 1
+    //  remove unnecessary key in object
+     delete brick.$key
+     delete brick.$exists
+     this.updateNote(this.activedKey,brick);
+  }
+
+  updateNote(key:string, updNote) {
+    this.firebaseService.updateNote(key, updNote);
+  }
+
 }

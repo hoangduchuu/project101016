@@ -11,7 +11,7 @@ const bricksPromise: Promise<Brick[]> = Promise.resolve (
        isShared: false,
        from:'Hiệp Xanh',
        to: 'Cẩm Thương',
-       id: 1508,
+       id: "1508",
        author: 'hiepxanh',
        content: `1
         Tôi yêu em từ những cái nhìn đầu tiên.
@@ -28,7 +28,7 @@ const bricksPromise: Promise<Brick[]> = Promise.resolve (
        isShared: false,
        from:'Không tên',
        to: 'Không tên',
-       id: 1508,
+       id: "1508",
        author: 'hiepxanh',
        content: '2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis excepturi blanditiis consectetur nihil cumque ad incidunt, amet harum, neque maxime perspiciatis, id iste recusandae omnis quo mollitia. Unde animi, amet deserunt impedit praesentium quos similique.'
    },
@@ -40,7 +40,7 @@ const bricksPromise: Promise<Brick[]> = Promise.resolve (
        isShared: false,
        from:'Không tên',
        to: 'Không tên',
-       id: 1508,
+       id: "1508",
        author: 'hiepxanh',
        content: '3 Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit..'
    },
@@ -52,7 +52,7 @@ const bricksPromise: Promise<Brick[]> = Promise.resolve (
        isShared: false,
        from:'Không tên',
        to: 'Không tên',
-       id: 1508,
+       id: "1508",
        author: 'hiepxanh',
        content: '4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, fuga, ab. Nesciunt, consequuntur eveniet. Ex harum sapiente illum fugit a.'
    },
@@ -64,7 +64,7 @@ const bricksPromise: Promise<Brick[]> = Promise.resolve (
        isShared: false,
        from:'Không tên',
        to: 'Không tên',
-       id: 5,
+       id: "5",
        author: 'hiepxanh',
        content: '5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis corrupti impedit dicta quibusdam eaque voluptates aut autem facilis quos explicabo?'
    },
@@ -76,7 +76,7 @@ const bricksPromise: Promise<Brick[]> = Promise.resolve (
        isShared: false,
        from:'Không tên',
        to: 'Không tên',
-       id: 1,
+       id: "1",
        author: 'hiepxanh',
        content: '6 Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
    },
@@ -88,7 +88,7 @@ const bricksPromise: Promise<Brick[]> = Promise.resolve (
        isShared: false,
        from:'Không tên',
        to: 'Không tên',
-       id: 1508,
+       id: "1508",
        author: 'hiepxanh',
        content: '7 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis excepturi blanditiis consectetur nihil cumque ad incidunt, amet harum, neque maxime perspiciatis, id iste recusandae omnis quo mollitia. Unde animi, amet deserunt impedit praesentium quos similique.'
    },
@@ -100,7 +100,7 @@ const bricksPromise: Promise<Brick[]> = Promise.resolve (
        isShared: false,
        from:'Không tên',
        to: 'Không tên',
-       id: 18,
+       id: "18",
        author: 'hiepxanh',
        content: '8 Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit..'
    },
@@ -112,7 +112,7 @@ const bricksPromise: Promise<Brick[]> = Promise.resolve (
        isShared: false,
        from:'Không tên',
        to: 'Không tên',
-       id: 1508,
+       id: "1508",
        author: 'hiepxanh',
        content: '9 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, fuga, ab. Nesciunt, consequuntur eveniet. Ex harum sapiente illum fugit a.'
    },
@@ -124,7 +124,7 @@ const bricksPromise: Promise<Brick[]> = Promise.resolve (
        isShared: false,
        from:'Không tên',
        to: 'Không tên',
-       id: 158,
+       id: "158",
        author: 'hiepxanh',
        content: '10 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis corrupti impedit dicta quibusdam eaque voluptates aut autem facilis quos explicabo?'
    },
@@ -136,7 +136,7 @@ const bricksPromise: Promise<Brick[]> = Promise.resolve (
        isShared: false,
        from:'Không tên',
        to: 'Không tên',
-       id: 1508,
+       id: "1508",
        author: 'hiepxanh',
        content: '11 Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
    },

@@ -166,7 +166,10 @@ export class NoteComponent implements OnInit {
      searchNote(term) {
       this.firebaseService.searchNotes(term).subscribe( notes => {
         this.bricks= notes.filter(note => {
-          return note.id.toString().toLowerCase() == term;
+          return note.id.toString().toLowerCase() == term ||
+          note['from'].toLowerCase().includes(term) ||
+          note['to'].toLowerCase().includes(term) ||
+          note.content.toLowerCase().includes(term);
         })
       });
      }

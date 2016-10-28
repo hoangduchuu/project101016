@@ -69,7 +69,7 @@
   text-overflow: ellipsis;
   word-wrap: break-word;
   overflow: hidden;
-  /*max-height: 15.1em;*/
+  max-height: 999em;
   line-height: 1.8em;
 }
 
